@@ -96,6 +96,8 @@ if (VMarkdownitOption.metadata) {
 
 mdit = mdit.use(window.markdownitFootnote);
 
+mdit = mdit.use(window.MarkdownItImsize);
+
 var mdHasTocSection = function(markdown) {
     var n = markdown.search(/(\n|^)\[toc\]/i);
     return n != -1;
